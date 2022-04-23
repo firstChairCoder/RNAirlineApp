@@ -1,0 +1,30 @@
+const colors = {
+  white: "#FFFFFF",
+  whiteBackground: "#f3f7fa",
+  blue: "#0D50C8",
+  gray: "gray",
+  black: "black",
+  textPrimary: "#20283A",
+  pink: "#FF7F76",
+  textSecondary: "#747474",
+  transparent: "transparent",
+  airportCodeBg: "#E7EDF0",
+  inputLabel: "#A3A7A9",
+  inputShadow: "#787878",
+  inputOuterShadow: "#0D50C8",
+  outerCircle: "#D2D6D9",
+  innerCircle: "#D0D3D6",
+  tipIcon: "#00A3FF",
+  destinationIata: "#00A1FF",
+  modalOverlay: "rgba(26,26,26, 0.31)",
+  priceBg: "#F9F9F9",
+  modalBorder: "#E7EDF0",
+  transferValue: "#0E0000",
+  gradientStart: "rgba(255, 255, 255, 0)",
+  gradientEnd: "rgba(13, 80, 200, 1)",
+  clearButtonBg: "#efeff3",
+  clearButtonCross: "#7a7a7a",
+};
+
+// eslint-disable-next-line import/no-default-export
+export default colors;

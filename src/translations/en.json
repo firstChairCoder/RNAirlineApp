@@ -1,0 +1,28 @@
+{
+    "home": {
+        "headerFirst": "Travel safely",
+        "headerSecond": "with the",
+        "headerHighlighted": "NG Airlines",
+        "sectionTitleFirst": "COVID-19 Travel Guide",
+        "sectionTitleSecond": "Overview",
+        "sectionTitleThird": "News",
+        "tileCommonTitle": "NEW FLIGHTS"
+    },
+    "connections": {
+        "headerFirst": "New",
+        "headerHighlighted": "Connections",
+        "inputPlaceholder": "From",
+        "openedToday": "Opened today",
+        "emptyTitle": "Look for your flights",
+        "emptyDescription": "Security is increased, so the guards can ask you to remove them during identity control"
+    },
+    "flightInfoModal": {
+        "priceLabel": "Price",
+        "transferLabel": "Transfer: ",
+        "transferValue": "Non stop",
+        "buttonFirst": "Read safety guide",
+        "buttonSecond": "Book Ticket",
+        "oldPrice": "$960",
+        "newPrice": "$759"
+    }
+}
