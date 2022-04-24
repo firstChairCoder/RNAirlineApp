@@ -1,8 +1,8 @@
 /* eslint-disable import/extensions */
 import React from "react";
 import { Provider as PaperProvider } from "react-native-paper";
-// import { Provider } from "react-redux";
-// import { store } from "@store/store";
+import { Provider } from "react-redux";
+import { store } from "@store/store";
 
 // import { useInitializeFonts } from "./src/hooks/useInitializeFonts";
 import { PaperTheme } from "./src/theme";
@@ -25,12 +25,12 @@ export default function App() {
   // }
 
   return (
-    // <Provider store={store}>
     <LoadAssets {...{ fonts }}>
-      <PaperProvider theme={PaperTheme}>
-        <MainNavigator />
-      </PaperProvider>
+      <Provider store={store}>
+        <PaperProvider theme={PaperTheme}>
+          <MainNavigator />
+        </PaperProvider>
+      </Provider>
     </LoadAssets>
-    // </Provider>
   );
 }
