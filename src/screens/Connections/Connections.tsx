@@ -47,7 +47,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const Connections = () => {
+type Props = {
+  navigation: any;
+};
+
+const Connections = ({ navigation }: Props) => {
   const [isMapView, setIsMapView] = useState(false);
   const [originAirport, setOriginAirport] = useState<{
     iata: string;
@@ -83,6 +87,16 @@ const Connections = () => {
   const listViewContainerStyle = {
     opacity: !isMapView ? 1 : 0,
     ...StyleSheet.absoluteFillObject,
+  };
+
+  const onPress = () => {
+    if (modalRef && modalRef.current && modalRef.current.close) {
+      modalRef.current.close();
+    }
+
+    navigation.navigate("BookingScreen", {
+      modalData: modalData,
+    });
   };
 
   const onChangeText = useCallback((text) => {
@@ -191,7 +205,7 @@ const Connections = () => {
           <Switch toggled={isMapView} setToggled={setIsMapView} />
         </View>
       )}
-      <FlightInfoModal modalRef={modalRef} {...modalData} />
+      <FlightInfoModal modalRef={modalRef} {...modalData} onPress={onPress} />
     </>
   );
 };

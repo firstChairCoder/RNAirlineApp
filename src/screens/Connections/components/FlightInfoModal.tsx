@@ -31,6 +31,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     paddingHorizontal: 20,
   },
+  detailsButton: {
+    ...buttonCommonStyles,
+    backgroundColor: colors.blue,
+  },
+  detailsButtonText: {
+    ...textStyles.modalButtonText,
+    color: colors.white,
+  },
   //   boxesRow: {
   //     flexDirection: "row",
   //   },
@@ -117,6 +125,7 @@ interface FlightInfoModalProps {
   origin: string;
   originIata: string;
   modalRef: Ref<RBSheet>;
+  onPress(): void;
 }
 
 const FlightInfoModal = ({
@@ -126,6 +135,7 @@ const FlightInfoModal = ({
   origin,
   originIata,
   time,
+  onPress
 }: FlightInfoModalProps) => {
   return (
     <>
@@ -162,6 +172,12 @@ const FlightInfoModal = ({
               {t.flightInfoModal.buttonFirst}
             </Text>
           </TouchableOpacity>
+
+          <TouchableOpacity style={styles.detailsButton} onPress={onPress}>
+          <Text style={styles.detailsButtonText}>
+            {t.flightInfoModal.buttonSecond}
+          </Text>
+        </TouchableOpacity>
         </View>
         <SafeAreaView />
       </RBSheet>
