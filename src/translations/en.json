@@ -24,5 +24,42 @@
         "buttonSecond": "Book Ticket",
         "oldPrice": "$960",
         "newPrice": "$759"
+    },
+    "myBooking": {
+        "title": "Primary passenger",
+        "continue": "Continue",
+        "subtotal": "Subtotal",
+        "headerTitle": "My bookings",
+        "successReservation": {
+            "title": "Success!",
+            "message": "You have successfully booked the flight."
+        },
+        "errorReservation": {
+            "title": "An error occurred!",
+            "message": "An unexpected error occurred. Please try again later."
+        }
+    },
+    "baggage": {
+        "title": "Baggage",
+        "cabin": "Cabin bag",
+        "cabinSize": "40 x 18 x 25 cm, 7kg",
+        "checked": "Checked bag",
+        "checkedSize": "55 x 20 x 40 cm, 10kg",
+        "price": "Free"
+    },
+    "form": {
+        "validations": {
+            "required": "This field is required",
+            "passportTooLong": "Passport number is too long",
+            "passportTooShort": "Passport number is too short"
+        },
+        "fields": {
+            "name": "First Name",
+            "namePlaceholder": "e.g. Jane",
+            "surname": "Surname",
+            "surnamePlaceholder": "e.g. Doe",
+            "passport": "Passport or ID number",
+            "passportPlaceholder": "Passport or ID number"
+        }
     }
 }
